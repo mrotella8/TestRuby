@@ -1,0 +1,26 @@
+<div class="info">
+  <br>
+  <h1>Linguagens e seus Repositórios:</h1>
+  <h4> Clique em "Show" e veja seu repositório.</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Link</>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @test_bancos.each do |test_banco| %>
+        <tr>
+          <td><%= test_banco.nome %></td>
+          <td><%= test_banco.link %></td>
+          <td><%= link_to 'Show', test_banco %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+<div>

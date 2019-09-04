@@ -1,0 +1,27 @@
+<%= form_with(model: test_banco, local: true) do |form| %>
+  <% if test_banco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(test_banco.errors.count, "error") %> prohibited this test_banco from being saved:</h2>
+
+      <ul>
+        <% test_banco.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
