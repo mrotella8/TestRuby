@@ -1,0 +1,10 @@
+{
+    "video": false,
+    "viewportWidth": 1280,
+    "viewportHeight": 800,
+    "defaultCommandTimeout": 20000,
+    "pageLoadTimeout": 30000,
+    "chromeWebSecurity": false,
+    "fixturesFolder": false,
+    "ignoreTestFiles": "*.ts"
+  }
